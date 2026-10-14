@@ -1,3 +1,5 @@
+![logo](public/images/logo/coffira-logo-reversed.svg)
+
 # Coffira
 
 Coffira is a coffee & tea e-commerce storefront built with React, Redux Toolkit, React Router, and Tailwind CSS.
