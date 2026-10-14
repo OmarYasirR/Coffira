@@ -1,0 +1,73 @@
+<svg viewBox="0 0 900 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .tile { fill: #F8F1E7; }
+      .line { fill: none; stroke: #2B1B12; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .fill-accent { fill: #C1672F; }
+      .fill-dark { fill: #2B1B12; }
+      .label { font-family: Georgia, serif; font-size: 14px; fill: #2B1B12; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- 1. Coffee Beans -->
+  <g transform="translate(10,10)">
+    <circle cx="70" cy="60" r="70" class="tile"/>
+    <ellipse cx="52" cy="48" rx="16" ry="22" class="fill-accent" transform="rotate(-20 52 48)"/>
+    <path class="line" d="M52 32 C46 40 46 56 52 64" transform="rotate(-20 52 48)"/>
+    <ellipse cx="82" cy="66" rx="16" ry="22" class="fill-accent" transform="rotate(15 82 66)"/>
+    <path class="line" d="M82 50 C76 58 76 74 82 82" transform="rotate(15 82 66)"/>
+    <ellipse cx="60" cy="88" rx="14" ry="19" class="fill-accent" transform="rotate(50 60 88)"/>
+    <path class="line" d="M60 74 C55 81 55 95 60 102" transform="rotate(50 60 88)"/>
+    <text x="70" y="150" class="label">Coffee Beans</text>
+  </g>
+
+  <!-- 2. Ground Coffee -->
+  <g transform="translate(160,10)">
+    <circle cx="70" cy="60" r="70" class="tile"/>
+    <path class="line" d="M40 44 C40 40 44 38 48 38 L92 38 C96 38 100 40 100 44 L94 84 C93 90 88 94 82 94 L58 94 C52 94 47 90 46 84 Z" fill="#fff"/>
+    <g class="fill-dark">
+      <circle cx="55" cy="50" r="2.2"/><circle cx="63" cy="55" r="2.2"/><circle cx="71" cy="49" r="2.2"/>
+      <circle cx="79" cy="56" r="2.2"/><circle cx="87" cy="50" r="2.2"/><circle cx="59" cy="63" r="2.2"/>
+      <circle cx="67" cy="68" r="2.2"/><circle cx="75" cy="64" r="2.2"/><circle cx="83" cy="69" r="2.2"/>
+      <circle cx="63" cy="76" r="2.2"/><circle cx="71" cy="80" r="2.2"/><circle cx="79" cy="77" r="2.2"/>
+    </g>
+    <text x="70" y="150" class="label">Ground Coffee</text>
+  </g>
+
+  <!-- 3. Espresso -->
+  <g transform="translate(310,10)">
+    <circle cx="70" cy="60" r="70" class="tile"/>
+    <path class="line" d="M44 52 L96 52 L90 86 C89 92 84 96 78 96 L62 96 C56 96 51 92 50 86 Z"/>
+    <path class="fill-accent" d="M48 56 L92 56 L87 84 C86.4 88 83 91 79 91 L61 91 C57 91 53.6 88 53 84 Z"/>
+    <path class="line" d="M96 56 C104 56 108 60 108 66 C108 72 104 76 96 76"/>
+    <text x="70" y="150" class="label">Espresso</text>
+  </g>
+
+  <!-- 4. Capsules -->
+  <g transform="translate(460,10)">
+    <circle cx="70" cy="60" r="70" class="tile"/>
+    <path class="fill-accent" d="M52 34 L88 34 C90 34 92 36 92 38 L92 76 C92 90 82 100 70 100 C58 100 48 90 48 76 L48 38 C48 36 50 34 52 34 Z"/>
+    <path class="line" d="M52 34 L88 34 C90 34 92 36 92 38 L92 76 C92 90 82 100 70 100 C58 100 48 90 48 76 L48 38 C48 36 50 34 52 34 Z"/>
+    <line class="line" x1="48" y1="46" x2="92" y2="46"/>
+    <text x="70" y="150" class="label">Capsules</text>
+  </g>
+
+  <!-- 5. Cold Brew -->
+  <g transform="translate(610,10)">
+    <circle cx="70" cy="60" r="70" class="tile"/>
+    <path class="line" d="M50 40 L90 40 L84 92 C83.5 96 80 99 76 99 L64 99 C60 99 56.5 96 56 92 Z"/>
+    <path class="fill-dark" d="M53 66 L87 66 L84 92 C83.5 96 80 99 76 99 L64 99 C60 99 56.5 96 56 92 Z"/>
+    <line class="line" x1="48" y1="40" x2="92" y2="40"/>
+    <text x="70" y="150" class="label">Cold Brew</text>
+  </g>
+
+  <!-- 6. Accessories -->
+  <g transform="translate(760,10)">
+    <circle cx="70" cy="60" r="70" class="tile"/>
+    <path class="line" d="M70 30 L70 54"/>
+    <circle cx="70" cy="30" r="6" class="fill-accent"/>
+    <path class="line" d="M46 54 C46 40 56 32 70 32 C84 32 94 40 94 54 L94 60 L46 60 Z"/>
+    <path class="line" d="M50 60 L50 82 C50 90 58 96 70 96 C82 96 90 90 90 82 L90 60"/>
+    <text x="70" y="150" class="label">Accessories</text>
+  </g>
+</svg>

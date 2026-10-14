@@ -1,0 +1,61 @@
+<svg viewBox="0 0 300 430" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bag { fill: #8FAE6B; }
+      .flap { fill: #708D50; }
+      .stitch { stroke: #445A2B; stroke-width: 2; stroke-dasharray: 4 4; }
+      .label { fill: #F8F1E7; stroke: #445A2B; stroke-width: 2; }
+      .brand { font-family: Georgia, serif; font-size: 11px; fill: #8A6A50; letter-spacing: 2px; text-anchor: middle; }
+      .name  { font-family: Georgia, serif; font-weight: 700; font-size: 17px; fill: #2B1B12; text-anchor: middle; }
+      .sub   { font-family: Georgia, serif; font-size: 11px; fill: #6B5A48; text-anchor: middle; }
+      .leaf  { fill: #4C7A3F; }
+      .petal { fill: #FFFFFF; }
+    </style>
+  </defs>
+
+  <rect width="300" height="430" fill="#F4EEE3"/>
+
+  <g>
+    <path class="leaf" d="M40 402 C48 398 54 402 52 410 C46 414 38 410 40 402 Z" transform="rotate(-15 46 405)"/>
+    <g transform="translate(66,415) scale(0.5)">
+      <ellipse class="petal" cx="0" cy="-7" rx="3.5" ry="7"/>
+      <ellipse class="petal" cx="0" cy="7" rx="3.5" ry="7"/>
+      <ellipse class="petal" cx="-7" cy="0" rx="7" ry="3.5"/>
+      <ellipse class="petal" cx="7" cy="0" rx="7" ry="3.5"/>
+      <circle fill="#E8A93B" r="3"/>
+    </g>
+    <path class="leaf" d="M255 405 C263 401 269 405 267 413 C261 417 253 413 255 405 Z" transform="rotate(25 261 408)"/>
+    <g transform="translate(238,418) scale(0.5)">
+      <ellipse class="petal" cx="0" cy="-7" rx="3.5" ry="7"/>
+      <ellipse class="petal" cx="0" cy="7" rx="3.5" ry="7"/>
+      <ellipse class="petal" cx="-7" cy="0" rx="7" ry="3.5"/>
+      <ellipse class="petal" cx="7" cy="0" rx="7" ry="3.5"/>
+      <circle fill="#E8A93B" r="3"/>
+    </g>
+  </g>
+
+  <path class="flap" d="M100,55 L200,55 L212,112 L88,112 Z"/>
+  <line class="stitch" x1="94" y1="84" x2="206" y2="84"/>
+
+  <path class="bag" d="M88,112
+           C76,112 70,124 70,144
+           L70,355
+           C70,385 92,405 122,405
+           L178,405
+           C208,405 230,385 230,355
+           L230,144
+           C230,124 224,112 212,112 Z"/>
+
+  <path fill="#7C9958" d="M70,144 L88,144 L88,405 C78,400 70,382 70,355 Z"/>
+  <path fill="#7C9958" d="M230,144 L212,144 L212,405 C222,400 230,382 230,355 Z"/>
+
+  <rect class="label" x="92" y="168" width="116" height="150" rx="10"/>
+  <circle cx="150" cy="192" r="12" fill="#2B1B12"/>
+  <circle cx="150" cy="192" r="5" fill="#FFFFFF"/>
+  <text x="150" y="222" class="brand">COFFIRA TEA</text>
+  <text x="150" y="248" class="name">Jasmine</text>
+  <text x="150" y="288" class="sub">Green Tea &amp; Jasmine</text>
+  <text x="150" y="304" class="sub">Loose Leaf · 100g</text>
+
+  <circle cx="150" cy="400" r="6" fill="#445A2B"/>
+</svg>

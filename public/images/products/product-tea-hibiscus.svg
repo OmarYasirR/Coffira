@@ -1,0 +1,59 @@
+<svg viewBox="0 0 300 430" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bag { fill: #A83250; }
+      .flap { fill: #86243D; }
+      .stitch { stroke: #4C1220; stroke-width: 2; stroke-dasharray: 4 4; }
+      .label { fill: #F8F1E7; stroke: #4C1220; stroke-width: 2; }
+      .brand { font-family: Georgia, serif; font-size: 11px; fill: #8A6A50; letter-spacing: 2px; text-anchor: middle; }
+      .name  { font-family: Georgia, serif; font-weight: 700; font-size: 17px; fill: #2B1B12; text-anchor: middle; }
+      .sub   { font-family: Georgia, serif; font-size: 11px; fill: #6B5A48; text-anchor: middle; }
+      .petal { fill: #D9497A; }
+    </style>
+  </defs>
+
+  <rect width="300" height="430" fill="#F4EEE3"/>
+
+  <g>
+    <g transform="translate(48,408) scale(0.55)">
+      <ellipse class="petal" cx="0" cy="-9" rx="5" ry="9"/>
+      <ellipse class="petal" cx="0" cy="9" rx="5" ry="9"/>
+      <ellipse class="petal" cx="-9" cy="0" rx="9" ry="5"/>
+      <ellipse class="petal" cx="9" cy="0" rx="9" ry="5"/>
+      <circle fill="#7A1E30" r="4"/>
+    </g>
+    <g transform="translate(258,406) scale(0.55)">
+      <ellipse class="petal" cx="0" cy="-9" rx="5" ry="9"/>
+      <ellipse class="petal" cx="0" cy="9" rx="5" ry="9"/>
+      <ellipse class="petal" cx="-9" cy="0" rx="9" ry="5"/>
+      <ellipse class="petal" cx="9" cy="0" rx="9" ry="5"/>
+      <circle fill="#7A1E30" r="4"/>
+    </g>
+    <circle cx="20" cy="418" r="4" fill="#D9497A"/>
+  </g>
+
+  <path class="flap" d="M100,55 L200,55 L212,112 L88,112 Z"/>
+  <line class="stitch" x1="94" y1="84" x2="206" y2="84"/>
+
+  <path class="bag" d="M88,112
+           C76,112 70,124 70,144
+           L70,355
+           C70,385 92,405 122,405
+           L178,405
+           C208,405 230,385 230,355
+           L230,144
+           C230,124 224,112 212,112 Z"/>
+
+  <path fill="#8E2A45" d="M70,144 L88,144 L88,405 C78,400 70,382 70,355 Z"/>
+  <path fill="#8E2A45" d="M230,144 L212,144 L212,405 C222,400 230,382 230,355 Z"/>
+
+  <rect class="label" x="92" y="168" width="116" height="150" rx="10"/>
+  <circle cx="150" cy="192" r="12" fill="#2B1B12"/>
+  <circle cx="150" cy="192" r="5" fill="#D9497A"/>
+  <text x="150" y="222" class="brand">COFFIRA TEA</text>
+  <text x="150" y="248" class="name">Hibiscus</text>
+  <text x="150" y="288" class="sub">Herbal Infusion</text>
+  <text x="150" y="304" class="sub">20 Bags · 34g</text>
+
+  <circle cx="150" cy="400" r="6" fill="#4C1220"/>
+</svg>

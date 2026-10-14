@@ -1,0 +1,32 @@
+<svg viewBox="0 0 520 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .wordmark { font-family: 'Georgia', 'Times New Roman', serif; font-weight: 700; }
+      .tagline  { font-family: Georgia, serif; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect width="520" height="160" fill="#F8F1E7"/>
+
+  <!-- coffee bean mark -->
+  <g transform="translate(38,40)">
+    <circle cx="42" cy="42" r="42" fill="#2B1B12"/>
+    <!-- bean body -->
+    <path d="M42 14
+             C58 14 68 26 68 42
+             C68 58 58 70 42 70
+             C26 70 16 58 16 42
+             C16 26 26 14 42 14 Z"
+          fill="#C1672F"/>
+    <!-- bean crease -->
+    <path d="M42 16
+             C34 24 34 34 42 42
+             C50 50 50 60 42 68"
+          fill="none" stroke="#2B1B12" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- wordmark -->
+  <text x="140" y="82" class="wordmark" font-size="52" fill="#2B1B12" letter-spacing="1">Coffira</text>
+  <text x="141" y="108" class="tagline" font-size="16" fill="#8A6A50" letter-spacing="3">FRESH. PREMIUM. PERFECT.</text>
+</svg>

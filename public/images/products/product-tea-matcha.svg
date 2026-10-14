@@ -1,0 +1,47 @@
+<svg viewBox="0 0 300 430" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .tin { fill: #6FA83F; }
+      .tin-shade { fill: #55832F; }
+      .lid { fill: #2B1B12; }
+      .lid-top { fill: #3A2418; }
+      .label { fill: #F8F1E7; stroke: #2B1B12; stroke-width: 2; }
+      .brand { font-family: Georgia, serif; font-size: 11px; fill: #8A6A50; letter-spacing: 2px; text-anchor: middle; }
+      .name  { font-family: Georgia, serif; font-weight: 700; font-size: 17px; fill: #2B1B12; text-anchor: middle; }
+      .sub   { font-family: Georgia, serif; font-size: 11px; fill: #6B5A48; text-anchor: middle; }
+      .leaf  { fill: #4C7A3F; }
+      .powder{ fill: #6FA83F; }
+    </style>
+  </defs>
+
+  <rect width="300" height="430" fill="#F4EEE3"/>
+
+  <!-- scattered matcha powder heap + leaves -->
+  <g>
+    <ellipse class="powder" cx="55" cy="415" rx="22" ry="7"/>
+    <ellipse class="powder" cx="55" cy="410" rx="16" ry="6"/>
+    <path class="leaf" d="M245 405 C253 401 259 405 257 413 C251 417 243 413 245 405 Z" transform="rotate(25 251 408)"/>
+    <path class="leaf" d="M232 415 C240 411 246 415 244 423 C238 427 230 423 232 415 Z" transform="rotate(-10 238 418)"/>
+  </g>
+
+  <!-- tin body (cylinder look via two ellipses + rect) -->
+  <rect class="tin" x="80" y="130" width="140" height="240" rx="10"/>
+  <ellipse class="tin" cx="150" cy="130" rx="70" ry="16"/>
+  <ellipse class="tin-shade" cx="150" cy="370" rx="70" ry="16"/>
+  <path class="tin-shade" d="M80,130 L92,130 L92,370 L80,370 Z"/>
+  <path class="tin-shade" d="M220,130 L208,130 L208,370 L220,370 Z"/>
+
+  <!-- lid -->
+  <rect class="lid" x="86" y="104" width="128" height="30" rx="8"/>
+  <ellipse class="lid-top" cx="150" cy="104" rx="64" ry="14"/>
+  <ellipse fill="#2B1B12" cx="150" cy="100" rx="20" ry="6"/>
+
+  <!-- label -->
+  <rect class="label" x="98" y="188" width="104" height="130" rx="10"/>
+  <circle cx="150" cy="210" r="11" fill="#2B1B12"/>
+  <path d="M150 202 C159 205 162 212 156 217 C151 219 145 216 145 210 C145 207 147 203 150 202 Z" fill="#4C7A3F"/>
+  <text x="150" y="236" class="brand">COFFIRA TEA</text>
+  <text x="150" y="260" class="name">Matcha</text>
+  <text x="150" y="280" class="sub">Ceremonial Grade</text>
+  <text x="150" y="296" class="sub">Powder · 30g</text>
+</svg>

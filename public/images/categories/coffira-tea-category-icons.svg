@@ -1,0 +1,69 @@
+<svg viewBox="0 0 900 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .tile { fill: #F8F1E7; }
+      .line { fill: none; stroke: #2B1B12; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .fill-accent { fill: #4C7A3F; }
+      .fill-dark { fill: #2B1B12; }
+      .label { font-family: Georgia, serif; font-size: 14px; fill: #2B1B12; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- 1. Loose Leaf -->
+  <g transform="translate(10,10)">
+    <circle cx="70" cy="60" r="70" class="tile"/>
+    <path class="fill-accent" d="M70 32 C90 40 96 62 82 80 C68 98 46 96 40 78 C34 60 50 24 70 32 Z"/>
+    <path class="line" d="M70 32 C90 40 96 62 82 80 C68 98 46 96 40 78 C34 60 50 24 70 32 Z"/>
+    <path class="line" d="M52 42 C64 54 72 66 76 84"/>
+    <text x="70" y="150" class="label">Loose Leaf</text>
+  </g>
+
+  <!-- 2. Tea Bags -->
+  <g transform="translate(160,10)">
+    <circle cx="70" cy="60" r="70" class="tile"/>
+    <line class="line" x1="70" y1="30" x2="70" y2="46"/>
+    <rect x="52" y="46" width="36" height="42" rx="4" fill="#fff" stroke="#2B1B12" stroke-width="4"/>
+    <circle cx="70" cy="30" r="5" fill="#C1672F"/>
+    <path class="line" d="M58 58 L82 58 M58 68 L82 68 M58 78 L82 78"/>
+    <text x="70" y="150" class="label">Tea Bags</text>
+  </g>
+
+  <!-- 3. Herbal -->
+  <g transform="translate(310,10)">
+    <circle cx="70" cy="60" r="70" class="tile"/>
+    <path class="line" d="M70 90 C70 60 60 46 44 38"/>
+    <path class="fill-accent" d="M44 38 C58 38 66 48 62 60 C50 60 42 50 44 38 Z"/>
+    <path class="line" d="M70 78 C70 58 78 46 92 40"/>
+    <path class="fill-accent" d="M92 40 C80 42 74 52 78 62 C88 60 94 50 92 40 Z"/>
+    <text x="70" y="150" class="label">Herbal</text>
+  </g>
+
+  <!-- 4. Green Tea -->
+  <g transform="translate(460,10)">
+    <circle cx="70" cy="60" r="70" class="tile"/>
+    <path class="line" d="M46 78 C46 60 56 46 78 42 C74 62 66 74 46 78 Z" fill="#8FAE6B"/>
+    <path class="line" d="M50 86 C60 78 68 68 74 44"/>
+    <ellipse cx="70" cy="92" rx="26" ry="6" fill="none" stroke="#2B1B12" stroke-width="4"/>
+    <text x="70" y="150" class="label">Green Tea</text>
+  </g>
+
+  <!-- 5. Chai -->
+  <g transform="translate(610,10)">
+    <circle cx="70" cy="60" r="70" class="tile"/>
+    <path class="line" d="M46 54 L94 54 L88 92 C87 96 83 99 79 99 L61 99 C57 99 53 96 52 92 Z"/>
+    <path class="fill-accent" fill="#A85C2C" d="M50 60 L90 60 L86 90 C85.5 93 82 96 79 96 L61 96 C58 96 54.5 93 54 90 Z"/>
+    <path class="line" d="M56 54 C56 44 60 40 56 32 M70 54 C70 44 74 40 70 32 M84 54 C84 44 88 40 84 32"/>
+    <text x="70" y="150" class="label">Chai</text>
+  </g>
+
+  <!-- 6. Iced Tea -->
+  <g transform="translate(760,10)">
+    <circle cx="70" cy="60" r="70" class="tile"/>
+    <path class="line" d="M50 40 L90 40 L84 92 C83.5 96 80 99 76 99 L64 99 C60 99 56.5 96 56 92 Z"/>
+    <path class="fill-accent" fill="#3F8E6B" d="M53 66 L87 66 L84 92 C83.5 96 80 99 76 99 L64 99 C60 99 56.5 96 56 92 Z"/>
+    <line class="line" x1="48" y1="40" x2="92" y2="40"/>
+    <line class="line" x1="60" y1="72" x2="60" y2="86"/>
+    <line class="line" x1="70" y1="76" x2="70" y2="90"/>
+    <text x="70" y="150" class="label">Iced Tea</text>
+  </g>
+</svg>

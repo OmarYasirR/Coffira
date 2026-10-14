@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- Fonts ----
+   English: Inter (body) + Playfair Display (headings)
+   Arabic:  Tajawal for everything
+   Tajawal is kept as a fallback in the English stacks so Arabic text that
+   appears in LTR mode (e.g. the language switcher) still renders in Tajawal. */
+:root {
+  --font-sans: 'Inter', 'Tajawal', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif: 'Playfair Display', 'Tajawal', Georgia, 'Times New Roman', serif;
+}
+html[dir='rtl'] {
+  --font-sans: 'Tajawal', 'Segoe UI', Tahoma, sans-serif;
+  --font-serif: 'Tajawal', 'Segoe UI', Tahoma, sans-serif;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-brand-creamAlt text-brand-dark font-sans;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+
+  /* Arabic: Tajawal reads best with a little more line height, and
+     letter-spacing / uppercase must be off because spacing breaks Arabic
+     letter joining (Tailwind's tracking-* classes are used in the hero,
+     tea section and kicker labels). */
+  html[dir='rtl'] body {
+    line-height: 1.7;
+  }
+  html[dir='rtl'] body * {
+    letter-spacing: 0 !important;
+    text-transform: none !important;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-brand-dark text-brand-cream px-5 py-2.5 rounded-md font-medium hover:bg-brand-brown transition-colors;
+  }
+  .btn-secondary {
+    @apply bg-transparent border border-brand-dark text-brand-dark px-5 py-2.5 rounded-md font-medium hover:bg-brand-dark hover:text-brand-cream transition-colors;
+  }
+  .btn-accent {
+    @apply bg-brand-rust text-white px-5 py-2.5 rounded-md font-medium hover:opacity-90 transition-opacity;
+  }
+  .input-field {
+    @apply w-full border border-brand-tan/60 rounded-md px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-brand-rust/50;
+  }
+  .container-app {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Mad-lib sentence filter tokens (see MadLibFilter.jsx) */
+  .madlib-token {
+    display: inline-block;
+    font: inherit;
+    font-weight: 800;
+    color: #2B1B12;
+    background: #EAD6A8;
+    border: 0;
+    border-radius: 10px;
+    padding: 0 0.4em;
+    margin: 0 0.05em;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    text-align: center;
+    box-shadow: 0 0.12em 0 #C1672F;
+    transition: transform 0.15s ease;
+  }
+  .madlib-token:hover {
+    transform: translateY(-1px);
+  }
+  .madlib-token:focus-visible {
+    outline: 3px solid #C1672F;
+    outline-offset: 3px;
+  }
+  .madlib-token option {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .filter-card {
+    animation: filter-card-in 0.35s ease both;
+  }
+  @keyframes filter-card-in {
+    from { opacity: 0; transform: scale(0.96); }
+    to { opacity: 1; transform: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .filter-card { animation: none; }
+    .madlib-token:hover { transform: none; }
+  }
+}

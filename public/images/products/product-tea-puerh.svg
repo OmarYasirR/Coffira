@@ -1,0 +1,33 @@
+<svg viewBox="0 0 300 430" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .wrap { fill: #4A2E1C; } .wrap-shade { fill: #34200F; }
+      .label { fill: #F8F1E7; stroke: #2B1B12; stroke-width: 2; }
+      .brand { font-family: Georgia, serif; font-size: 11px; fill: #8A6A50; letter-spacing: 2px; text-anchor: middle; }
+      .name  { font-family: Georgia, serif; font-weight: 700; font-size: 17px; fill: #2B1B12; text-anchor: middle; }
+      .sub   { font-family: Georgia, serif; font-size: 11px; fill: #6B5A48; text-anchor: middle; }
+      .cake  { fill: #6B4526; stroke: #3A250F; stroke-width: 2; }
+    </style>
+  </defs>
+  <rect width="300" height="430" fill="#F4EEE3"/>
+
+  <!-- compressed tea cake disc -->
+  <ellipse class="cake" cx="150" cy="260" rx="95" ry="95"/>
+  <ellipse fill="#5C3B22" cx="150" cy="260" rx="95" ry="20"/>
+  <g stroke="#3A250F" stroke-width="1" opacity="0.5">
+    <path d="M70 260 C90 240 210 240 230 260" fill="none"/>
+    <path d="M75 280 C100 300 200 300 225 280" fill="none"/>
+    <path d="M90 220 C120 210 180 210 210 220" fill="none"/>
+  </g>
+
+  <!-- wrapping paper corner -->
+  <path class="wrap" d="M55 165 L150 165 L165 190 L55 260 Z"/>
+  <path class="wrap-shade" d="M55 165 L55 260 L165 190 Z" opacity="0.4"/>
+
+  <rect class="label" x="98" y="330" width="104" height="80" rx="10"/>
+  <circle cx="150" cy="350" r="10" fill="#2B1B12"/>
+  <path d="M150 344 C158 347 160 353 155 357 C151 359 146 356 146 351 C146 348 148 345 150 344 Z" fill="#6B4526"/>
+  <text x="150" y="372" class="brand">COFFIRA TEA</text>
+  <text x="150" y="392" class="name">Pu-erh</text>
+  <text x="150" y="406" class="sub">Aged Dark Tea · 100g Cake</text>
+</svg>

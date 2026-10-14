@@ -1,0 +1,50 @@
+<svg viewBox="0 0 300 430" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bag { fill: #A85C2C; }
+      .flap { fill: #874821; }
+      .stitch { stroke: #4E2811; stroke-width: 2; stroke-dasharray: 4 4; }
+      .label { fill: #F8F1E7; stroke: #4E2811; stroke-width: 2; }
+      .brand { font-family: Georgia, serif; font-size: 11px; fill: #8A6A50; letter-spacing: 2px; text-anchor: middle; }
+      .name  { font-family: Georgia, serif; font-weight: 700; font-size: 17px; fill: #2B1B12; text-anchor: middle; }
+      .sub   { font-family: Georgia, serif; font-size: 11px; fill: #6B5A48; text-anchor: middle; }
+      .cinn  { fill: #7A4522; stroke: #4E2811; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect width="300" height="430" fill="#F4EEE3"/>
+
+  <!-- cinnamon sticks & star anise scattered -->
+  <g>
+    <rect class="cinn" x="34" y="398" width="26" height="8" rx="4" transform="rotate(-20 47 402)"/>
+    <rect class="cinn" x="56" y="412" width="22" height="7" rx="3.5" transform="rotate(15 67 415)"/>
+    <path fill="#7A4522" stroke="#4E2811" stroke-width="1" d="M255 405 l4 -8 l4 8 l8 4 l-8 4 l-4 8 l-4 -8 l-8 -4 Z" transform="translate(0,2) scale(0.8) translate(60,100)"/>
+    <rect class="cinn" x="228" y="414" width="22" height="7" rx="3.5" transform="rotate(-10 239 417)"/>
+    <circle cx="20" cy="418" r="4" fill="#D98A3D"/>
+  </g>
+
+  <path class="flap" d="M100,55 L200,55 L212,112 L88,112 Z"/>
+  <line class="stitch" x1="94" y1="84" x2="206" y2="84"/>
+
+  <path class="bag" d="M88,112
+           C76,112 70,124 70,144
+           L70,355
+           C70,385 92,405 122,405
+           L178,405
+           C208,405 230,385 230,355
+           L230,144
+           C230,124 224,112 212,112 Z"/>
+
+  <path fill="#8F4C24" d="M70,144 L88,144 L88,405 C78,400 70,382 70,355 Z"/>
+  <path fill="#8F4C24" d="M230,144 L212,144 L212,405 C222,400 230,382 230,355 Z"/>
+
+  <rect class="label" x="92" y="168" width="116" height="150" rx="10"/>
+  <circle cx="150" cy="192" r="12" fill="#2B1B12"/>
+  <circle cx="150" cy="192" r="5" fill="#D98A3D"/>
+  <text x="150" y="222" class="brand">COFFIRA TEA</text>
+  <text x="150" y="248" class="name">Chai Spice</text>
+  <text x="150" y="288" class="sub">Black Tea &amp; Spices</text>
+  <text x="150" y="304" class="sub">20 Bags · 40g</text>
+
+  <circle cx="150" cy="400" r="6" fill="#4E2811"/>
+</svg>

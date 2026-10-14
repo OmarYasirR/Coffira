@@ -1,0 +1,17 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgTB" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#8A5A34"/>
+      <stop offset="100%" stop-color="#402A18"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#bgTB)"/>
+  <g transform="translate(100,104)">
+    <line x1="0" y1="-50" x2="0" y2="-24" stroke="#F8F1E7" stroke-width="3"/>
+    <circle cx="0" cy="-54" r="7" fill="#C1672F"/>
+    <path d="M-24 -24 L24 -24 L18 34 C17 40 12 44 6 44 L-6 44 C-12 44 -17 40 -18 34 Z" fill="#F8F1E7"/>
+    <line x1="-24" y1="-8" x2="18" y2="-8" stroke="#8A5A34" stroke-width="2.5"/>
+    <line x1="-22" y1="4" x2="16" y2="4" stroke="#8A5A34" stroke-width="2.5"/>
+    <line x1="-20" y1="16" x2="14" y2="16" stroke="#8A5A34" stroke-width="2.5"/>
+  </g>
+</svg>

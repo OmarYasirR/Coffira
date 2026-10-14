@@ -1,0 +1,37 @@
+<svg viewBox="0 0 300 430" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bag { fill: #3A1F14; } .bag-shade { fill: #26140D; } .flap { fill: #200F0A; }
+      .stitch { stroke: #C1672F; stroke-width: 2; stroke-dasharray: 4 4; }
+      .label { fill: #F8F1E7; stroke: #000000; stroke-width: 2; }
+      .brand { font-family: Georgia, serif; font-size: 11px; fill: #8A6A50; letter-spacing: 2px; text-anchor: middle; }
+      .name  { font-family: Georgia, serif; font-weight: 700; font-size: 17px; fill: #2B1B12; text-anchor: middle; }
+      .sub   { font-family: Georgia, serif; font-size: 11px; fill: #6B5A48; text-anchor: middle; }
+      .bean  { fill: #5A3A22; }
+    </style>
+  </defs>
+  <rect width="300" height="430" fill="#F4EEE3"/>
+  <g>
+    <ellipse class="bean" cx="40" cy="405" rx="9" ry="6" transform="rotate(-15 40 405)"/>
+    <ellipse class="bean" cx="60" cy="415" rx="8" ry="5.5" transform="rotate(20 60 415)"/>
+    <ellipse class="bean" cx="255" cy="408" rx="9" ry="6" transform="rotate(25 255 408)"/>
+    <ellipse class="bean" cx="235" cy="418" rx="8" ry="5.5" transform="rotate(-10 235 418)"/>
+    <ellipse class="bean" cx="20" cy="420" rx="7" ry="5" transform="rotate(5 20 420)"/>
+  </g>
+  <path class="flap" d="M100,55 L200,55 L212,112 L88,112 Z"/>
+  <line class="stitch" x1="94" y1="84" x2="206" y2="84"/>
+  <path class="bag" d="M88,112 C76,112 70,124 70,144 L70,355 C70,385 92,405 122,405 L178,405 C208,405 230,385 230,355 L230,144 C230,124 224,112 212,112 Z"/>
+  <path class="bag-shade" d="M70,144 L88,144 L88,405 C78,400 70,382 70,355 Z"/>
+  <path class="bag-shade" d="M230,144 L212,144 L212,405 C222,400 230,382 230,355 Z"/>
+  <!-- red accent stripe, nod to Vietnamese drip filter -->
+  <rect x="70" y="335" width="160" height="8" fill="#C1272D"/>
+  <rect class="label" x="92" y="168" width="116" height="150" rx="10"/>
+  <circle cx="150" cy="192" r="12" fill="#2B1B12"/>
+  <path d="M150,183 C155,183 159,187 159,192 C159,197 155,201 150,201 C145,201 141,197 141,192 C141,187 145,183 150,183 Z" fill="#C1672F"/>
+  <text x="150" y="222" class="brand">COFFIRA</text>
+  <text x="150" y="248" class="name">Vietnamese</text>
+  <text x="150" y="268" class="name">Robusta</text>
+  <text x="150" y="288" class="sub">Dark Roast</text>
+  <text x="150" y="304" class="sub">Whole Bean · 250g</text>
+  <circle cx="150" cy="400" r="6" fill="#000000"/>
+</svg>

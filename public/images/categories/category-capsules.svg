@@ -1,0 +1,18 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgCP" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#6B4426"/>
+      <stop offset="100%" stop-color="#2B1B12"/>
+    </radialGradient>
+    <linearGradient id="capBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E08A45"/>
+      <stop offset="100%" stop-color="#B5581F"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#bgCP)"/>
+  <g transform="translate(100,106)">
+    <path d="M-28 -38 L28 -38 C32 -38 34 -35 34 -32 L34 18 C34 42 18 58 0 58 C-18 58 -34 42 -34 18 L-34 -32 C-34 -35 -32 -38 -28 -38 Z" fill="url(#capBody)"/>
+    <rect x="-34" y="-38" width="68" height="14" rx="3" fill="#F8F1E7"/>
+    <path d="M-34 -12 L34 -12" stroke="#8A3E12" stroke-width="2" opacity="0.6"/>
+  </g>
+</svg>

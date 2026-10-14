@@ -1,0 +1,37 @@
+<svg viewBox="0 0 300 430" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bag { fill: #D9B676; } .flap { fill: #B4923A; } .stitch { stroke: #6E5313; stroke-width: 2; stroke-dasharray: 4 4; }
+      .label { fill: #F8F1E7; stroke: #6E5313; stroke-width: 2; }
+      .brand { font-family: Georgia, serif; font-size: 11px; fill: #8A6A50; letter-spacing: 2px; text-anchor: middle; }
+      .name  { font-family: Georgia, serif; font-weight: 700; font-size: 17px; fill: #2B1B12; text-anchor: middle; }
+      .sub   { font-family: Georgia, serif; font-size: 11px; fill: #6B5A48; text-anchor: middle; }
+      .grain { fill: #6B4E28; }
+      .bean  { fill: #E8D9A0; }
+    </style>
+  </defs>
+  <rect width="300" height="430" fill="#F4EEE3"/>
+  <g>
+    <rect class="bean" x="36" y="400" width="6" height="16" rx="3" transform="rotate(-15 39 408)"/>
+    <rect class="bean" x="56" y="410" width="6" height="16" rx="3" transform="rotate(20 59 418)"/>
+    <rect class="bean" x="252" y="402" width="6" height="16" rx="3" transform="rotate(25 255 410)"/>
+    <rect class="bean" x="228" y="412" width="6" height="16" rx="3" transform="rotate(-10 231 420)"/>
+  </g>
+  <path class="flap" d="M100,55 L200,55 L212,112 L88,112 Z"/>
+  <line class="stitch" x1="94" y1="84" x2="206" y2="84"/>
+  <path class="bag" d="M88,112 C76,112 70,124 70,144 L70,355 C70,385 92,405 122,405 L178,405 C208,405 230,385 230,355 L230,144 C230,124 224,112 212,112 Z"/>
+  <path fill="#C09E4A" d="M70,144 L88,144 L88,405 C78,400 70,382 70,355 Z"/>
+  <path fill="#C09E4A" d="M230,144 L212,144 L212,405 C222,400 230,382 230,355 Z"/>
+  <rect class="label" x="92" y="168" width="116" height="150" rx="10"/>
+  <circle cx="150" cy="192" r="12" fill="#2B1B12"/>
+  <g transform="translate(150,192) scale(0.5)">
+    <circle r="9" fill="none" stroke="#F8F1E7" stroke-width="2"/>
+    <circle cx="-3" cy="-2" r="1.6" fill="#F8F1E7"/><circle cx="2" cy="1" r="1.6" fill="#F8F1E7"/><circle cx="-1" cy="4" r="1.6" fill="#F8F1E7"/>
+  </g>
+  <text x="150" y="222" class="brand">COFFIRA</text>
+  <text x="150" y="248" class="name">Vanilla</text>
+  <text x="150" y="268" class="name">Flavored Ground</text>
+  <text x="150" y="288" class="sub">Medium Grind</text>
+  <text x="150" y="304" class="sub">Ground Coffee · 250g</text>
+  <circle cx="150" cy="400" r="6" fill="#6E5313"/>
+</svg>
